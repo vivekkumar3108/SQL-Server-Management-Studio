@@ -40,4 +40,6 @@ WHERE PrimaryKeyCount > 1 ;
 
 -----------------------------------SUM----------------------------------------------
 
-
+SELECT 
+	*, SUM(Sales) OVER(PARTITION BY CustomerID) CustomerSalesSum
+FROM Sales.OrdersArchive;
