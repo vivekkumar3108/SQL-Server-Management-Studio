@@ -92,6 +92,34 @@ FROM
 	NTILE(3) OVER(ORDER BY SALES) Bucket
 From Sales.Orders) t;
 
+--IN Order to export the data, Divide it into two group.
+
+SELECT 
+ *,
+ NTILE(2) OVER(ORDER BY Sales DESC) TwoBucket
+FROM Sales.Orders;
+
+--------------------------- PERCNTAGE BASED RANKING :- CUME_DIST() & PERCENT_RANK()  --------------------------------
+--- CUME_DIST = Position NR / No. of Rows | Tie Rule:- Takes the position of last occurance of same value.
+--- PERCENT_RANK = Position NR - 1 / No. of Rows - 1 | Calculate the Relative postition of each row. | Tie Rule:- Takes the position of First occurance of same value.
+
+-- Find the top 40% Costly Products
+
+SELECT *, CONCAT(CumeDist*100,'%') CumeDistPerc FROM
+(SELECT
+	*,
+	CUME_DIST() OVER(ORDER BY Price) CumeDist
+FROM Sales.Products) t
+Where CumeDist<=0.4;
+
+SELECT *, CONCAT(CumeDist*100,'%') CumeDistPerc FROM
+(SELECT
+	*,
+	PERCENT_RANK() OVER(ORDER BY Price) CumeDist
+FROM Sales.Products) t
+Where CumeDist<=0.4;
+
+
 
 
 
