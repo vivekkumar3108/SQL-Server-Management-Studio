@@ -11,3 +11,9 @@
 ![image](https://github.com/user-attachments/assets/7e5c9b27-e3e5-475e-9c28-c028f7151b6c)
 ![image](https://github.com/user-attachments/assets/cf92603c-09c3-4821-912d-b0db45ef7464)
 ![image](https://github.com/user-attachments/assets/50c6a31a-1dfb-4582-a726-e8f150b4bcae)
+
+**SET OPERAOR FUNCTION:-**
+
+![image](https://github.com/user-attachments/assets/4180feac-104a-4c23-a818-835f05682c4e)
+![image](https://github.com/user-attachments/assets/345f790b-7c1c-4912-9db6-b8d831fa4b23)
+![image](https://github.com/user-attachments/assets/965896c3-1ac8-43e9-9ca3-345094739132)
