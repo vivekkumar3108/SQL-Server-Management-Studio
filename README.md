@@ -8,3 +8,4 @@
 **VALUE WINDOW FUNCTION:-**
 
 ![image](https://github.com/user-attachments/assets/7014b93e-02ee-4df9-9198-4039c50956cf)
+![image](https://github.com/user-attachments/assets/7e5c9b27-e3e5-475e-9c28-c028f7151b6c)
