@@ -38,6 +38,12 @@ FROM Sales.Orders;
 
 SELECT 
 	ProductID, Sales,
+	MIN(Sales) OVER(PARTITION BY ProductID ORDER BY Sales) LowestSale,
+	MAX(Sales) OVER(PARTITION BY ProductID ORDER BY Sales DESC) HighestSale
+FROM Sales.Orders;
+
+SELECT 
+	ProductID, Sales,
 	FIRST_VALUE(Sales) OVER(PARTITION BY ProductID ORDER BY Sales) LowestSale,
 	Sales - FIRST_VALUE(Sales) OVER(PARTITION BY ProductID ORDER BY Sales) DiffSale
 FROM Sales.Orders;
