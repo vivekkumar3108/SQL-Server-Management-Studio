@@ -32,3 +32,6 @@ __ANTI JOIN:-__ USING IS NULL
 
 ![image](https://github.com/user-attachments/assets/a7a45fdc-8ca2-4c98-9491-a514b24269ab)
 
+**NULL POLICY:-**
+![image](https://github.com/user-attachments/assets/a9c4ea56-40f4-4e1e-a578-847444a4ac6b)
+
