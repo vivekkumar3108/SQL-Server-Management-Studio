@@ -22,3 +22,8 @@
 
 ![image](https://github.com/user-attachments/assets/c4ebd947-0c43-425c-b9e5-ab6142e92ef3)
 ![image](https://github.com/user-attachments/assets/3ec0d180-daa4-4a14-8970-985c37d34ac7)
+
+**NULL FUNCTIONS:-**
+
+![image](https://github.com/user-attachments/assets/22e4527e-f607-4aef-9c84-349f35b67246)
+![image](https://github.com/user-attachments/assets/ac20a548-a12f-4851-b601-c08080c6420c)
