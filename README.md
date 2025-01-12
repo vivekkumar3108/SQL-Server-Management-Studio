@@ -27,3 +27,8 @@
 
 ![image](https://github.com/user-attachments/assets/22e4527e-f607-4aef-9c84-349f35b67246)
 ![image](https://github.com/user-attachments/assets/ac20a548-a12f-4851-b601-c08080c6420c)
+
+__ANTI JOIN:-__ USING IS NULL
+
+![image](https://github.com/user-attachments/assets/a7a45fdc-8ca2-4c98-9491-a514b24269ab)
+
