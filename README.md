@@ -17,3 +17,8 @@
 ![image](https://github.com/user-attachments/assets/4180feac-104a-4c23-a818-835f05682c4e)
 ![image](https://github.com/user-attachments/assets/345f790b-7c1c-4912-9db6-b8d831fa4b23)
 ![image](https://github.com/user-attachments/assets/965896c3-1ac8-43e9-9ca3-345094739132)
+
+**CASE WHEN FUNCTION:-**
+
+![image](https://github.com/user-attachments/assets/c4ebd947-0c43-425c-b9e5-ab6142e92ef3)
+![image](https://github.com/user-attachments/assets/3ec0d180-daa4-4a14-8970-985c37d34ac7)
