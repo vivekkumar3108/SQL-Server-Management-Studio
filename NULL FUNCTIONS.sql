@@ -79,3 +79,16 @@ LEFT JOIN Sales.Orders o
 ON c.CustomerID = o.CustomerID
 WHERE o.CustomerID IS NULL;
 
+--NULL POLICY
+
+WITH ORDERS AS(
+SELECT 1 Id,  'A' Category UNION
+SELECT 2, NULL UNION
+SELECT 3, '' UNION
+SELECT 4, '  ' 
+)
+SELECT *,
+	TRIM(Category) POLICY1,
+	NULLIF(TRIM(Category),'') POLICY2,
+	COALESCE(NULLIF(TRIM(Category),''), 'unknown') POLICY2
+FROM ORDERS;
