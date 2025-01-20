@@ -37,5 +37,6 @@ __ANTI JOIN:-__ USING IS NULL
 
 **DATETIME FUNCTIONS:-**
 ![image](https://github.com/user-attachments/assets/6191792b-a3a2-4b13-8afc-d64e3acd01a6)
+![image](https://github.com/user-attachments/assets/5af9327d-f075-41ba-b8b3-bb4b6fbca7e2)
 ![image](https://github.com/user-attachments/assets/fc500fff-a204-4016-bb00-f135a9021741)
 
