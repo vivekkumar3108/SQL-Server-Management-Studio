@@ -39,4 +39,10 @@ __ANTI JOIN:-__ USING IS NULL
 ![image](https://github.com/user-attachments/assets/6191792b-a3a2-4b13-8afc-d64e3acd01a6)
 ![image](https://github.com/user-attachments/assets/5af9327d-f075-41ba-b8b3-bb4b6fbca7e2)
 ![image](https://github.com/user-attachments/assets/fc500fff-a204-4016-bb00-f135a9021741)
+![image](https://github.com/user-attachments/assets/f6f26a0b-9d55-4c8d-a45f-8e5313f04474)
+![image](https://github.com/user-attachments/assets/da9da8ee-e940-445c-bce7-97f6abdec066)
+![image](https://github.com/user-attachments/assets/11840fe0-113d-474b-83e7-ae30f8d5ae70)
+
+
+
 
