@@ -64,3 +64,52 @@ SELECT
 	FORMAT(OrderDate, 'yyyy-MMM') [YYYY-MMM], Count(*) Total
 FROM Sales.Orders
 GROUP BY FORMAT(OrderDate, 'yyyy-MMM');
+
+
+--FORMAT() -> Helps to change the data type of a value and at same time changes the format.
+
+SELECT 
+	CONVERT(INT,'1234') [String to Int],
+	CONVERT(DATE,'2025-08-31') [String to Date],
+	CONVERT(DATETIME, '2034-09-08') [String to DateTime];
+
+SELECT
+	CreationTime,
+	CONVERT(DATE, CreationTime) [DateTime to Date],
+	CONVERT(VARCHAR, CreationTime, 32) [DateTime to Varchar:32],
+	CONVERT(VARCHAR, CreationTime, 34) [DateTime to Varchar:34],
+	CONVERT(VARCHAR, CreationTime, 101) [DateTime to Varchar:101],
+	CONVERT(VARCHAR, CreationTime, 102) [DateTime to Varchar:102]
+FROM Sales.Orders;
+
+--CAST :- Convert one Datatype to Other.
+--SYNTAX: CAST( Value As DataType)
+
+SELECT
+	CAST('123' AS INT) [Cast STRING to INT],
+	CAST(123 AS VARCHAR) [Cast INT to STRING],
+	CreationTime,
+	CAST(CreationTime AS DATE) [Cast CreationTime to DATE],
+	CAST('2024-09-15' AS DATETIME) [Cast DATE to DATETIME]
+FROM Sales.Orders;
+
+--DATEADD :- used to add/subtract day/month/year/hour/minute/second from DATETIME
+--SYNTAX :- DATEADD(Part,Interval,Date)
+
+SELECT
+	CreationTime,
+	DATEADD(Year,2,CreationTime) [2 Year Later],
+	DATEADD(Month,2,CreationTime) [2 Month Later],
+	DATEADD(day,2,CreationTime) [2 Days Later],
+	DATEADD(Year,-2,CreationTime) [2 Year Before],
+	DATEADD(Month,-2,CreationTime) [2 Month Before],
+	DATEADD(day,-2,CreationTime) [2 Days Before],
+	DATEADD(HOUR,-2,CreationTime) [2 Hours Before],
+	DATEADD(MINUTE,-2,CreationTime) [2 Minute Before],
+	DATEADD(SECOND,-2,CreationTime) [2 Second Before],	
+	DATEADD(HOUR,2,CreationTime) [2 Hours Before],
+	DATEADD(MINUTE,2,CreationTime) [2 Minute Before],
+	DATEADD(SECOND,2,CreationTime) [2 Second Before]
+FROM Sales.Orders;
+
+
