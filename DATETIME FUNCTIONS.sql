@@ -130,3 +130,7 @@ SELECT
 FROM Sales.Orders
 GROUP BY DATEPART(MONTH,OrderDate);
 
+SELECT
+	MONTH(OrderDate) Month,AVG(DATEDIFF(DAY,OrderDate,ShipDate)) AvgDays
+FROM Sales.Orders
+GROUP BY DATEPART(MONTH,OrderDate);
