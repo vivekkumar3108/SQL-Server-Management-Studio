@@ -113,3 +113,24 @@ SELECT
 FROM Sales.Orders;
 
 
+--DATEDIFF :- use to find the difference between two dates, in terms of year, month, day
+--Usage:- DATEDIFF(part,start_date, end_date)
+
+--Calculate Age of Employees
+
+SELECT
+	EmployeeID,FirstName,BirthDate, CONVERT(DATE,GETDATE()) AgeAsOf,
+	DATEDIFF(YEAR,BirthDate,GETDATE()) Age 
+FROM Sales.Employees;
+
+--Find average shipping duration in Days for each month
+
+SELECT
+	DATEPART(MONTH,OrderDate) Month,AVG(DATEDIFF(DAY,OrderDate,ShipDate)) AvgDays
+FROM Sales.Orders
+GROUP BY DATEPART(MONTH,OrderDate);
+
+SELECT
+	MONTH(OrderDate) Month,AVG(DATEDIFF(DAY,OrderDate,ShipDate)) AvgDays
+FROM Sales.Orders
+GROUP BY DATEPART(MONTH,OrderDate);
