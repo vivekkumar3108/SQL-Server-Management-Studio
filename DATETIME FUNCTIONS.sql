@@ -146,3 +146,8 @@ FROM (
 		FROM Sales.Orders
 	) t;
 
+
+--ISDATE -> check if given input is date or not
+
+SELECT ISDATE('123'),
+ISDATE('2024-12-31')
