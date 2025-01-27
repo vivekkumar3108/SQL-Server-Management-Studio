@@ -134,3 +134,15 @@ SELECT
 	MONTH(OrderDate) Month,AVG(DATEDIFF(DAY,OrderDate,ShipDate)) AvgDays
 FROM Sales.Orders
 GROUP BY DATEPART(MONTH,OrderDate);
+
+--TIMEGAP Analysis
+--Find the No. of Days Between Previous Order and Each Order
+
+SELECT 
+	OrderID, DATEDIFF(DAY,PrevOrderDate,OrderDate) GapInDays
+FROM (
+		SELECT
+			OrderID, OrderDate, LAG(OrderDate) OVER(Order by OrderDate) PrevOrderDate
+		FROM Sales.Orders
+	) t;
+
